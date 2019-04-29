@@ -13,7 +13,7 @@ jobs:
       - run: |
           cd quic-1 
           ./configure
-          make -j0
+          make -j3
 
       - store_artifacts:
           path: ~/quic-1 
