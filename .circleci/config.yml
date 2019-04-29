@@ -10,9 +10,10 @@ jobs:
       
       - run: git clone https://github.com/HalleyAssist/quic-1.git
 
-      - run: cd quic-1 
-      - run: ./configure
-      - run: make
+      - run: |
+          cd quic-1 
+          ./configure
+          make
 
       - store_artifacts:
           path: ~/quic-1 
