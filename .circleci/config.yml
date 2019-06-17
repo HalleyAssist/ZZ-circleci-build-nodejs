@@ -17,5 +17,5 @@ jobs:
           make -j3
 
       - store_artifacts:
-          path: ~/repo/quic-1 
-          destination: quic-1
+          path: ~/repo/quic
+          destination: quic
