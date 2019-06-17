@@ -15,7 +15,8 @@ jobs:
           cd quic
           ./configure
           make -j3
+          zip ~/repo/quic.zip ~/repo/quic
 
       - store_artifacts:
-          path: ~/repo/quic
-          destination: quic
+          path: ~/repo/quic.zip
+          destination: quic.zip
