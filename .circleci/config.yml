@@ -9,13 +9,13 @@ jobs:
     steps:
       - checkout
       
-      - run: git clone https://github.com/HalleyAssist/quic-1.git
+      - run: git clone https://github.com/nodejs/quic.git
 
       - run: |
-          cd quic-1 
+          cd quic
           ./configure
           make -j3
 
       - store_artifacts:
-          path: ~/quic-1 
+          path: ~/repo/quic-1 
           destination: quic-1
