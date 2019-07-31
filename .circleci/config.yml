@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       
-      - run: git clone https://github.com/nodejs/quic.git
+      - run: git clone https://github.com/HalleyAssist/node --branch v12-draft-22
 
       - run: |
           cd quic
